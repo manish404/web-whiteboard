@@ -25,4 +25,6 @@ Can be integrated with any web-based apps easily.
 [ ] Add some animation for cool view.  
 [ ] Sharing screen via internet(till now, can share on single computer).  
 [ ] Prevent page from auto refresh.  
-[ ] Get confirmation while closing tab.  
+[ ] Get confirmation while closing tab. 
+
+![Screenshot](web-whiteboard.png)  
