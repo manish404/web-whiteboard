@@ -8,18 +8,20 @@ Can be integrated with any web-based apps easily.
 [x] Clearing & Deleting boards  
 [x] Downloading boards  
 [x] Multiple boards  
-[x] Zoom in or out board  
+[x] Zoom in/out board  
 [x] Multi colored & sized pen & Eraser  
 [x] Multiple shapes  
+[x] Multiple Background color  
+[x] Share screen/board   
 
 <h3> TODO: </h3>
 
-[ ] Background color (Bg image is not working properly!)  
-[ ] Responive on zooming screen.  
+[ ] Background image is not working properly!.  
+[ ] Make responsive board.  
 [ ] Draw image without affecting canvas position.  
 [ ] Writing text in the canvas.  
 [ ] Drawing 1 shape is remaining.  
 [ ] Add some animation for cool view.  
-[ ] Sharing screen via internet.  
-[ ] Prevent page from refresh  
-[ ] Get confirmation while closing tab  
+[ ] Sharing screen via internet(till now, can share single computer).  
+[ ] Prevent page from auto refresh.  
+[ ] Get confirmation while closing tab.  
