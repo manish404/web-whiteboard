@@ -9,9 +9,10 @@ Can be integrated with any web-based apps easily.
 [x] Downloading boards  
 [x] Multiple boards  
 [x] Zoom in/out board  
+[x] Full screen mode  
 [x] Multi colored & sized pen & Eraser  
-[x] Multiple shapes  
-[x] Multiple Background color  
+[x] Multiple shape  
+[x] Multiple Background color   
 [x] Share screen/board   
 
 <h3> TODO: </h3>
@@ -22,6 +23,6 @@ Can be integrated with any web-based apps easily.
 [ ] Writing text in the canvas.  
 [ ] Drawing 1 shape is remaining.  
 [ ] Add some animation for cool view.  
-[ ] Sharing screen via internet(till now, can share single computer).  
+[ ] Sharing screen via internet(till now, can share on single computer).  
 [ ] Prevent page from auto refresh.  
 [ ] Get confirmation while closing tab.  
