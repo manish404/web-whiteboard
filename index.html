@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web-WhiteBoard</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div id="app">
+        <div class="actions">
+            <button id="menuBtn" class="actionBtn" title="Menu"> <i class="fa fa-bars"></i> </button>
+            <button id="undoBtn" class="actionBtn" title="Undo"> <i class="fa fa-undo"></i> </button>
+            <button id="redoBtn" class="actionBtn" title="Redo"> <i class="fa fa-repeat"></i> </button>
+            <button id="saveBtn" class="actionBtn" title="Save"> <i class="fa fa-floppy-o"></i> </button>
+            <button id="clearBtn" class="actionBtn" title="Clear Board"> <i class="fa fa-refresh"></i> </button>
+            <button id="deleteBtn" class="actionBtn" title="Delete All"> <i class="fa fa-trash"></i> </button>
+            <button id="fullscreenBtn" class="actionBtn" title="Full Screen"> <i class="fa fa-arrows-alt"></i> </button>
+            <button id="newBoardBtn" class="actionBtn" title="New Board"> <i class="fa fa-plus"></i> </button>
+            <button id="zoomInBtn" class="actionBtn" title="Zoom In Board"> <i class="fa fa-search-plus"></i> </button>
+            <button id="zoomOutBtn" class="actionBtn" title="Zoom Out Board"> <i class="fa fa-search-minus"></i> </button>
+
+            <button id="showFilesBtn" class="actionBtn" title="All Files"> <i class="fa fa-files-o"></i> </button>
+        </div>
+
+        <div class="center">
+            <div class="menu">
+                <!-- menu close button -->
+                <button id="closeMenuBtn" title="Close Menu"> <i class="fa fa-times-circle-o fa-2x"></i> </button>
+
+                <!-- pen size -->
+                <div class="penSize" title="Pen Size">
+                    <input type="number" id="penSize" value="3">
+                </div>
+
+                <!-- Eraser -->
+                <div class="eraserSize" title="Eraser Size">
+                    <input type="number" id="eraserSize" value="6">
+                </div>
+
+                <!-- pen color chooser -->
+                <input type="color" id="penColor" value="#000000" title="Pen Color">
+
+                <!-- shape chooser -->
+                <div class="shapeChooser" title="Draw Shape">
+                    <img id="shapeChooser" src="./assets/shapes/shapes.png" alt="">
+                    <div class="shapes"></div>
+                </div>
+
+                <!-- bg color chooser -->
+                <input type="color" id="bgColor" value="#ffffff" title="Background Color">
+
+                <!-- bg image chooser -->
+                <div class="bgChooser" title="Background Image">
+                    <img id="bgChooser" src="./assets/backgrounds/bg1.jpg">
+                    <div class="bg_images"></div>
+                </div>
+
+                <!-- Text Draw -->
+                <div class="text" title="Text">
+                    <i class="fa fa-font"></i>
+                </div>
+
+                <!-- Live Video Sharing -->
+                <div class="shareScreenBtn">
+                    <i class="fa fa-video-camera"></i>
+                </div>
+
+            </div>
+
+            <!-- Drawing Board -->
+            <div class="board">
+                <div class="minimizeScreen">
+                    <i class="fa fa-compress fa-2x"></i>
+                </div>
+                <!-- <canvas id="board"> Proto </canvas> -->
+            </div>
+
+        </div>
+    </div>
+
+    <!-- all Files showing box / preview box at right -->
+    <div class="filesDrawer" title="All Files">
+        <button id="closeFilesBtn" class="actionBtn" title="Close">X</button>
+    </div>
+
+    <!-- context-menu -->
+    <div id="context-menu">
+        <div class="item">
+            <h5 id="openBtnCM" class="CMBtn">Open</h5>
+        </div>
+        <div class="item">
+            <h5 id="editBtnCM" class="CMBtn">Edit</h5>
+        </div>
+        <div class="item">
+            <h5 id="saveBtnCM" class="CMBtn">Download</h5>
+        </div>
+        <div class="item">
+            <h5 id="deleteBtnCM" class="CMBtn">Delete</h5>
+        </div>
+    </div>
+
+    <!-- video player -->
+    <div class="videoPlayer">
+        <button id="closeVideoPlayer" class="actionBtn">X</button>
+        <video id="videoPlayer" autoplay></video>
+    </div>
+
+    <!-- scripts -->
+    <script src="./scripts/main.js"></script>
+    <script src="./scripts/screen_share.js"></script>
+</body>
+
+</html>

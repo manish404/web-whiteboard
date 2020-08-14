@@ -1,0 +1,197 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    overflow-x: hidden;
+    position: fixed;
+    color: blueviolet;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+li{
+    list-style: none;
+}
+
+#app {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.actions {
+    position: relative;
+    padding: 4px 8px;
+    z-index: 2;
+    transform: translate(10px, 10px);
+}
+
+.actionBtn {
+    padding: 3px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    color: blueviolet;
+    margin: 0 10px;
+    border: none;
+    outline: none;
+}
+
+#showFilesBtn {
+    float: right;
+}
+
+/* left menu bar */
+.menu {
+    position: absolute;
+    /* To hang menu over board */
+    float: left;
+    width: 3vw;
+    height: 90vh;
+    background-color: #f3f3f3;
+    margin: 1vh 0 0 1vw;
+    padding: 2px;
+    border-radius: 7px;
+    z-index: 2;
+    display: none;
+}
+
+.makeMenuFlexed{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#closeMenuBtn {
+    width: 3vw;
+    color: white;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.menu #penSize,
+.menu #eraserSize {
+    width: 3vw;
+    height: 20px;
+    color: blueviolet;
+    text-align: center;
+    margin: 5px 0 0 0;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+}
+
+.menu #penColor,
+.menu #bgColor,
+.shapeChooser,
+.bgChooser {
+    height: 5vh;
+    width: 3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 0;
+    border: 1px solid rebeccapurple;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+}
+
+.shapes,
+.bg_images {
+    position: absolute;
+    left: 4vw;
+    top: 1vh;
+    display: none;
+}
+
+.shapeChooser img {
+    width: 60%;
+}
+
+.bgChooser img{
+    width: 3vw;
+    height: 5.1vh;
+    border-radius: 4px;
+}
+
+.font { font-size: 22px; }
+
+/* canvas holder */
+.board {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    float: right;
+    cursor: crosshair;
+}
+
+.minimizeScreen {
+    display: none;
+    position: absolute;
+    cursor: pointer;
+}
+
+/* list of all files */
+.filesDrawer{
+    height: 95vh;
+    width: 18vw;
+    background-color: #e6e6e6;
+    z-index: 3;
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    border-radius: 4px;
+    overflow-y: scroll;
+    display: none;
+}
+
+#closeFilesBtn,
+#closeVideoPlayer{
+    float: right;
+    margin: 0;
+}
+
+.preview{
+    border: 2px solid blue;
+    height: 100px;
+    width: 200px;
+}
+
+/* context-menu */
+#context-menu{
+    position: fixed;
+    z-index: 1000;
+    width: 8vw;
+    background-color: #9c9090;
+    border-radius: 3px;
+    display: none;
+}
+
+#context-menu .item{
+    padding: 4px 8px;
+    font-size: 15px;
+    color: #fbf7f7;
+}
+
+#context-menu .item:hover{
+    background-color: #080707;
+    color: white;
+    border-radius: 4px;
+}
+
+/* VIDEO PLAYER */
+#videoPlayer{
+    position: absolute;
+    bottom: 1vh;
+    right: 0.5vw;
+    z-index: 1000;
+    display: none;
+}
