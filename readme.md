@@ -29,4 +29,4 @@ Can be integrated with any web-based apps easily.
 
 ![Screenshot](web-whiteboard.png)  
 
-[Open Website](https://manish404.github.io/web-whiteboard/){:target="_blank"}
+[Open Website](https://manish404.github.io/web-whiteboard/)
