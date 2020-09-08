@@ -28,3 +28,5 @@ Can be integrated with any web-based apps easily.
 [ ] Get confirmation while closing tab. 
 
 ![Screenshot](web-whiteboard.png)  
+
+[Open Website](https://manish404.github.io/web-whiteboard/)
