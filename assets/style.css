@@ -195,3 +195,23 @@ li{
     z-index: 1000;
     display: none;
 }
+
+/* footer */
+footer {
+    z-index: 1;
+    position: relative;
+    left: 0;
+    width: 80vw;
+    bottom: 0;
+    margin: 0 6px;
+}
+
+footer .statusBar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: black;
+    width: 80vw;
+    font-size: 14px;
+    font-weight: bold;
+}

@@ -569,3 +569,23 @@ board.addEventListener('wheel', (e) => {
     });
 
 });
+
+document.addEventListener('keydown', (e) => {
+    if(e.key === 'f') {
+        hide($('.actions'));
+        show($('.minimizeScreen'));
+        hide(menu);
+        $('#status').innerText = 'Press Esc to minimize screen';
+        setTimeout(() => {
+            $('#status').innerText = '';
+        }, 2000);
+    }
+    else if (e.key === 'Escape') {
+        show($('.actions'));
+        hide($('.minimizeScreen'));
+        $('#status').innerText = 'Press f to maximize screen';
+        setTimeout(() => {
+            $('#status').innerText = '';
+        }, 2000);
+    }
+});

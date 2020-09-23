@@ -1,6 +1,6 @@
 Featured web white board in pure html, css & js.  
 Along with screen sharing feature.  
-Can be integrated with any web-based apps easily.  
+Can be integrated with any web-based apps easily.   
 
 ### Features:
 
